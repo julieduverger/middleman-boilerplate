@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    
+    <!-- For Bootstrap responsiveness -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>Le Studio | Say Hype-Studio</title>
+
+    <link href="stylesheets/all.css" rel="stylesheet" />
+    <script src="javascripts/all.js"></script>
+
+    <meta property="og:title" content="SAY HYPE - Studio de Communication Globale - Bordeaux" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://sayhype-studio.fr" />
+    <meta property="og:image" content="url(../images/sayhype.png)" />
+    <meta property="og:description" content="Say Hype est un studio de création graphique spécialisé dans la confection d’identité visuelle et de site internet sur mesure." />
+    <meta property="og:site_name" content="SAY HYPE - Studio de Communication Globale - Bordeaux" />
+
+  </head>
+
+  <body class="studio">
+
+    <div id="header">
+      <div id="realisations" class="header-space"><a href="realisation.html"> Réalisations </a></div>
+      <div id="le-studio"class="header-space"><a href="studio.html"> Le Studio </a></div>
+      <div id="contact"class="header-space"><a href="contact.html"> Contact </a></div>
+    </div>
+    <div class="line-top"></div>
+    <div class="estampille"></div>
+
+    <div id="bottom">
+      <div class="line-bottom"></div>
+      
+    </div>
+    <section>
+<div id="container_titre" class="center">
+  <div id="nom_titre" class="center"><span class="say-titre say-droite">S</span><span class="studio-titre blur">S</span><span class="say-titre say-gauche">A</span><span class="studio-titre blur">T</span><span class="say-titre say-gauche">Y</span><span class="studio-titre blur">U</span><span class="say-titre say-gauche">H</span><span class="studio-titre blur">D</span><span class="say-titre ajust-droite say-gauche">Y</span><span class="studio-titre blur">I</span><span class="say-titre ajust-gauche">P</span><span class="studio-titre blur">O</span><span class="say-titre say-gauche">E</span></div>
+</div>
+<div id="container_line" class="center">
+  <div class="vertical_line"></div>
+</div>
+
+<div id="presentation_studio" class="center">
+  <div class="row_studio">
+    <div class="title_presentation">Présentation</div>
+    <div class="col">
+      <p>
+        Say Hype est un studio de création graphique spécialisé dans la confection d’identité visuelle.
+        Notre travail est l’aboutissement d’une succession de détails de la création graphique jusqu’à la technique d’impression, le choix du papier, le toucher.
+        Chaque détail s’harmonise pour créer, un objet à forte valeur ajoutée, esthétique et technique.
+        Dans une volonté de perfection, nous nous attelons également à la création de site internet sur-mesure ou Open Source (WordPress par exemple).
+      </p> 
+    </div>
+
+    <div class="col">
+      <p>
+        En s’inscrivant dans un univers poétique, nous révélons la délicatesse de chacune de vos idées pour satisfaire l’exigence de vos projets. <br>
+        Doté d’un esprit raffiné, Say Hype, Studio de communication indépendant s’attèle à la conception de votre identité visuelle. Un travail authentique, une création sur mesure et singulière, la passion du graphisme : c’est en ces quelques mots que l’on pourrait le définir.
+      </p>
+    </div>    
+  </div>
+    <div class="row_client">
+      <div class="title_presentation">Clients</div>
+        <div class="col colonne1">
+          <div>
+            <li>Les Pépites de Nana</li>
+            <li>Maec Inc</li>
+            <li>Les Jardins d'Eden</li>
+            <li>Eugénie Barron</li>
+            <li>Ana Carballo Pilates</li>
+            <li>Bordeaux Beer Factory</li>
+            <li>Côté Bassin</li>
+          </div>
+          <div>
+            <li>33 Prest</li>
+            <li>Mindful</li>
+            <li>Soa</li>
+            <li>Toi et Moi en Bermuda</li>
+            <li>Fuel Cost Control</li>
+            <li>CGI Formation</li>
+          </div>
+        </div>
+        
+        <div class="plus">
+          <div class="title_presentation">Publications</div>
+          <div class="col colonne1">
+            
+            <div>
+              <li>Fubiz Media</li>
+              <li>Clikclk</li>
+              <li>Etapes</li>
+            </div>
+          </div>
+        </div>
+
+    </div>
+</div>
+
+
+</section>
+
+
+<script>
+jQuery(document).ready(function(){
+
+  var $studio = $('.studio-titre');
+  var $say = $('.say-titre');
+  var $blur = $('.blur');
+  var $nom = $('#nom_titre');
+  var $container = $('#container_titre');
+  var $vertical_line = $('.vertical_line');
+  var $presentation_studio = $('#presentation_studio');
+
+
+  var tl = new TimelineMax();
+
+  tl.add('animation_titre')
+  .to($say,1.5, {opacity:'1'},'animation_titre')
+  .to($say,0.5,{'margin-right': '+=7px', ease: Power0.easeNone},'animation_titre+=0')
+  .to($studio,2,{opacity:'1'},'animation_titre+=0.5')
+  .to($studio,1,{top:'50px'},'animation_titre+=1.5')
+  .to($blur,1,{'-webkit-filter': 'blur(0px)', filter: 'blur(0px)'},'animation_titre+=1.5')
+  .to($say,1,{top:'-50px'},'animation_titre+=1.5')
+  .to($vertical_line, 1, {opacity: '1'}, 'animation_titre+=1.5')
+  .to($presentation_studio, 1, {opacity: '1'}, 'animation_titre+=2');
+
+});
+
+</script>
+  </body>
+</html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TweenMax.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/plugins/TextPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.6/jquery.fullPage.min.js"></script>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/plugins/ScrollToPlugin.min.js"></script>
+
+
+

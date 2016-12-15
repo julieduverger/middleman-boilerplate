@@ -1,0 +1,2758 @@
+@charset "UTF-8";
+/* -------------------------------------
+ * Fonts
+ * ------------------------------------- */
+@import url(vendor/jquery.fullPage.css);
+@font-face {
+  font-family: "brandon grotesque";
+  src: url("fonts/brandongrotesque/2DB5BB_0_0.eot");
+  src: url("fonts/brandongrotesque/2DB5BB_0_0.eot?#iefix") format("embedded-opentype");
+  src: url("fonts/brandongrotesque/2DB5BB_0_0.woff2") format("woff2");
+  src: url("fonts/brandongrotesque/2DB5BB_0_0.woff") format("woff"); }
+@font-face {
+  font-family: "brandon printed";
+  src: url("fonts/brandonprintedtwo/2DA06A_0_0.eot");
+  src: url("fonts/brandonprintedtwo/2DA06A_0_0.eot?#iefix") format("embedded-opentype");
+  src: url("fonts/brandonprintedtwo/2DA06A_0_0.woff2") format("woff2");
+  src: url("fonts/brandonprintedtwo/2DA06A_0_0.woff") format("woff"); }
+@font-face {
+  font-family: "sabon roman";
+  src: url("fonts/sabonroman/2FB87C_0_0.eot");
+  src: url("fonts/sabonroman/2FB87C_0_0.eot?#iefix") format("embedded-opentype");
+  src: url("fonts/sabonroman/2FB87C_0_0.woff2") format("woff2");
+  src: url("fonts/sabonroman/2FB87C_0_0.woff") format("woff"); }
+@font-face {
+  font-family: "financier display";
+  src: url("fonts/financierdisplay/FinancierDisplayWeb-Medium.eot");
+  src: url("fonts/financierdisplay/FinancierDisplayWeb-Medium.woff2") format("woff2");
+  src: url("fonts/financierdisplay/FinancierDisplayWeb-Medium.woff") format("woff"); }
+/* -------------------------------------
+ * Utilities classes
+ * These are examples of utilities classes
+ * Feel free to change them and create your own
+ * ------------------------------------- */
+/* line 1, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_commun.css.scss */
+html {
+  font-size: 10px; }
+
+/* line 2, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_commun.css.scss */
+a:link {
+  text-decoration: none; }
+
+/* line 3, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_commun.css.scss */
+#header {
+  position: fixed;
+  display: flex;
+  height: 90px;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.2rem;
+  letter-spacing: 2px;
+  z-index: 10; }
+
+/* line 4, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_commun.css.scss */
+.header-space {
+  margin-right: 10px;
+  margin-left: 10px; }
+
+/* line 5, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_commun.css.scss */
+.line-top {
+  position: fixed;
+  top: 90px;
+  left: 0;
+  width: 200px;
+  height: 1px;
+  background-color: #050505;
+  z-index: 10; }
+
+/* line 6, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_commun.css.scss */
+li {
+  list-style-type: none; }
+
+/* line 7, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_commun.css.scss */
+.line-bottom {
+  position: fixed;
+  bottom: 90px;
+  right: 0;
+  width: 200px;
+  background: #050505;
+  height: 1px;
+  z-index: 10; }
+
+/* line 8, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_commun.css.scss */
+a:visited {
+  color: #050505; }
+
+/* line 1, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_contact.css.scss */
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+/* line 2, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_contact.css.scss */
+.description_contact {
+  width: 1160px;
+  text-align: center; }
+
+/* line 3, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_contact.css.scss */
+p {
+  font-family: sabon roman;
+  font-size: 1.6rem;
+  flex-direction: column;
+  line-height: 30px; }
+
+/* line 4, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_contact.css.scss */
+.title_contact {
+  font-family: brandon grotesque;
+  font-size: 5rem;
+  text-transform: uppercase;
+  opacity: 0;
+  letter-spacing: 1px;
+  height: 250px; }
+
+/* line 5, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_contact.css.scss */
+.blur {
+  -webkit-filter: blur(3px);
+  filter: blur(3px); }
+
+/* line 6, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_contact.css.scss */
+#container_line {
+  height: 100px;
+  width: 100%; }
+
+/* line 7, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_contact.css.scss */
+.vertical_line {
+  height: 90px;
+  width: 1px;
+  background-color: #333333;
+  opacity: 0; }
+
+/* line 8, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_contact.css.scss */
+.mt {
+  margin-top: 50px; }
+
+/* line 9, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_contact.css.scss */
+#info_contact {
+  opacity: 0; }
+
+/* line 10, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_contact.css.scss */
+#info_contact a {
+  font-family: sabon roman;
+  font-size: 1.6rem; }
+
+/* line 11, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_contact.css.scss */
+.social_media {
+  display: flex;
+  justify-content: space-around;
+  width: 300px;
+  padding: 0px;
+  margin: 20px 0px 50px 0px; }
+
+/* line 12, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_contact.css.scss */
+.separator {
+  width: 40px;
+  height: 1px;
+  background-color: #333333; }
+
+/* line 13, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_contact.css.scss */
+.encart_bas2 {
+  height: 110px;
+  background-color: #050505;
+  opacity: 0; }
+
+/* line 14, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_contact.css.scss */
+.encart_bas2 p {
+  font-size: 1.3rem;
+  letter-spacing: 1px; }
+
+/* line 15, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_contact.css.scss */
+.encart_bas2 a {
+  font-size: 1.3rem !important;
+  letter-spacing: 1px;
+  color: #FBF3F4; }
+
+/* line 16, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_contact.css.scss */
+.encart_bas2 a:visited {
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  color: #FBF3F4; }
+
+/* line 17, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_contact.css.scss */
+.signature {
+  color: #FBF3F4;
+  position: relative; }
+
+/* line 18, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_contact.css.scss */
+.icone {
+  height: 30px;
+  width: 30px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  background-color: #E4CECE; }
+
+/* line 19, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_contact.css.scss */
+.fa {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  color: #FBF3F4; }
+
+/* line 20, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_contact.css.scss */
+.icone:hover {
+  background-color: #050505; }
+
+/* line 21, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_contact.css.scss */
+.goutte_gauche {
+  position: absolute;
+  bottom: calc(50% - 7px);
+  left: -20px; }
+
+/* line 22, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_contact.css.scss */
+.goutte_droite {
+  position: absolute;
+  bottom: calc(50% - 7px); }
+
+/* line 23, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_contact.css.scss */
+.mg {
+  padding-right: 10px;
+  padding-left: 10px; }
+
+/* line 24, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_contact.css.scss */
+a {
+  text-decoration: none;
+  color: inherit; }
+
+@media only screen and (min-width: 1020px) and (max-width: 1279px) {
+  /* line 27, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_contact.css.scss */
+  html {
+    font-size: 9px; }
+
+  /* line 28, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_contact.css.scss */
+  .description_contact {
+    width: 1000px; }
+
+  /* line 29, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_contact.css.scss */
+  .estampille {
+    z-index: 99; }
+
+  /* line 30, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_contact.css.scss */
+  #info_contact p {
+    font-size: 1.4rem; } }
+@media only screen and (min-width: 765px) and (max-width: 1019px) {
+  /* line 34, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_contact.css.scss */
+  html {
+    font-size: 9px; }
+
+  /* line 35, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_contact.css.scss */
+  .description_contact {
+    width: 750px; }
+
+  /* line 36, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_contact.css.scss */
+  .estampille {
+    z-index: 99; }
+
+  /* line 37, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_contact.css.scss */
+  #info_contact p {
+    font-size: 1.4rem; } }
+@media only screen and (min-width: 300px) and (max-width: 764px) {
+  /* line 41, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_contact.css.scss */
+  html {
+    font-size: 8px; }
+
+  /* line 42, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_contact.css.scss */
+  .description_contact {
+    width: 350px; }
+
+  /* line 43, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_contact.css.scss */
+  .estampille {
+    z-index: 99; }
+
+  /* line 44, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_contact.css.scss */
+  #info_contact p {
+    font-size: 1.4rem; }
+
+  /* line 45, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_contact.css.scss */
+  .blur {
+    letter-spacing: -10px; }
+
+  /* line 46, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_contact.css.scss */
+  .signature {
+    text-align: center;
+    width: 320px;
+    line-height: 20px; } }
+/* line 1, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_mentions.css.scss */
+.mentions {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 1160px; }
+
+/* line 2, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_mentions.css.scss */
+.mentions p {
+  font-family: sabon roman;
+  font-size: 1.6rem;
+  flex-direction: column;
+  line-height: 30px;
+  text-align: center; }
+
+/* line 3, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_mentions.css.scss */
+.mentions h3 {
+  font-size: 40px;
+  font-family: financier display;
+  letter-spacing: 5px;
+  color: #D2B0B4; }
+
+/* line 1, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.align-center {
+  display: flex;
+  align-items: center; }
+
+/* line 2, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.spacer_header {
+  height: 140px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center; }
+
+/* line 3, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.spacer_header2 {
+  height: 240px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center; }
+
+/* line 4, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.trame {
+  background-color: #050505;
+  width: 100%;
+  flex-direction: column; }
+
+/* line 5, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.title {
+  font-family: financier display;
+  line-height: 70px;
+  font-size: 4rem;
+  letter-spacing: 3px;
+  color: #FBF3F4; }
+
+/* line 6, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.courant {
+  font-size: 1.7rem;
+  font-family: sabon roman;
+  letter-spacing: 1px;
+  line-height: 30px;
+  color: #FBF3F4; }
+
+/* line 7, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.subtitle {
+  font-size: 2rem;
+  font-family: sabon roman;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 50px;
+  color: #FBF3F4; }
+
+/* line 8, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.survol {
+  cursor: pointer; }
+
+/* line 9, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.mbs {
+  margin-bottom: 100px; }
+
+/* line 10, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.mbs2 {
+  margin-bottom: 300px; }
+
+/* line 11, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+h7 {
+  font-family: sabon roman;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border: 1px solid #050503;
+  padding: 20px;
+  opacity: 0; }
+
+/*-----Bordeaux Beer Factory-----*/
+/*-----Photo Accueil-----*/
+/* line 15, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.pr_photo {
+  height: 900px;
+  width: 2000px;
+  position: relative;
+  align-items: flex-end;
+  justify-content: center; }
+
+/* line 16, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.photo1 {
+  background-image: url(../images/bbfphoto1.jpg); }
+
+/* line 17, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.position_photo1 {
+  position: absolute;
+  height: 450px;
+  top: 0px;
+  right: 0px;
+  width: 0%;
+  z-index: 2;
+  background-position: center; }
+
+/* line 18, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.photo2 {
+  background-image: url(../images/bbfphoto2.jpg); }
+
+/* line 19, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.position_photo2 {
+  position: absolute;
+  height: 450px;
+  bottom: 0px;
+  left: 0px;
+  width: 0%;
+  z-index: 2;
+  background-position: center; }
+
+/* line 20, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.vertical_line2 {
+  position: absolute;
+  top: -50px;
+  width: 1px;
+  height: 0px;
+  background-color: #FBF3F4;
+  z-index: 3; }
+
+/* line 21, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.nom_projet {
+  z-index: 3;
+  opacity: 0;
+  color: #FBF3F4;
+  text-transform: uppercase;
+  font-size: 5rem;
+  letter-spacing: 1rem;
+  height: 255px;
+  display: flex;
+  align-items: center; }
+
+/* line 22, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.nom_projet2 {
+  z-index: 3;
+  opacity: 0;
+  color: #FBF3F4;
+  text-transform: uppercase;
+  font-size: 5rem;
+  letter-spacing: 1rem;
+  height: 170px; }
+
+/*-----Trame Projets-----*/
+/* line 25, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.trame_projet {
+  width: 1160px;
+  position: relative;
+  height: 100%; }
+
+/* line 26, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.trame_projet2 {
+  width: 100%;
+  position: relative; }
+
+/* line 27, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.trame_left {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center; }
+
+/* line 28, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.trame_right {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center; }
+
+/* line 29, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.bande1 {
+  position: absolute;
+  top: 500px;
+  width: 0px;
+  right: 0px;
+  height: 250px;
+  background-color: #FBF3F4;
+  z-index: 2; }
+
+/* line 30, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.photo_leftcenter {
+  height: 700px;
+  width: 100%;
+  position: relative; }
+
+/* line 31, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.photo_left {
+  width: 600px;
+  height: 600px;
+  position: relative; }
+
+/* line 32, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.photo_rightcenter {
+  height: 700px;
+  width: 100%;
+  position: relative; }
+
+/* line 33, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.photo_right {
+  width: 600px;
+  height: 700px;
+  position: relative; }
+
+/* line 34, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.position_photo3 {
+  position: absolute;
+  height: 300px;
+  top: 0px;
+  right: 0px;
+  width: 0%;
+  z-index: 2;
+  background-repeat: no-repeat; }
+
+/* line 35, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.photo3 {
+  background-image: url(../images/bbfphoto3.jpg);
+  background-position: center; }
+
+/* line 36, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.texte1 {
+  position: absolute;
+  left: 400px;
+  height: 200px;
+  width: 415px;
+  opacity: 0;
+  text-align: left; }
+
+/* line 37, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.texte2 {
+  position: absolute;
+  width: 435px;
+  height: 70px;
+  top: 120px;
+  left: 650px;
+  opacity: 0;
+  text-align: left; }
+
+/* line 38, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.texte3 {
+  position: absolute;
+  width: 435px;
+  height: 70px;
+  top: 155px;
+  left: 650px;
+  color: #050505 !important;
+  text-align: left; }
+
+/* line 39, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.position_photo4 {
+  position: absolute;
+  height: 300px;
+  bottom: 0px;
+  left: 0px;
+  width: 0%;
+  z-index: 2;
+  background-repeat: no-repeat; }
+
+/* line 40, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.photo4 {
+  background-image: url(../images/bbfphoto4.jpg);
+  background-position: center; }
+
+/* line 42, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.position_photo5 {
+  position: absolute;
+  height: 350px;
+  top: 0px;
+  right: 0px;
+  width: 0%;
+  z-index: 2;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+/* line 43, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.photo5 {
+  background-image: url(../images/bbfphoto5.jpg); }
+
+/* line 44, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.texte5 {
+  position: absolute;
+  width: 600px;
+  height: 270px;
+  top: 60px;
+  right: 550px;
+  font-size: 4rem;
+  font-family: financier display;
+  letter-spacing: 3px;
+  line-height: 30px;
+  color: #FBF3F4;
+  opacity: 0;
+  text-align: right; }
+
+/* line 45, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.texte7 {
+  position: absolute;
+  width: 600px;
+  height: 160px;
+  top: 60px;
+  right: 550px;
+  font-size: 4rem;
+  font-family: financier display;
+  letter-spacing: 3px;
+  line-height: 30px;
+  color: #FBF3F4;
+  opacity: 0;
+  text-align: right; }
+
+/* line 47, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.position_photo6 {
+  position: absolute;
+  height: 350px;
+  bottom: 0px;
+  left: 0px;
+  width: 0%;
+  z-index: 2;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+/* line 48, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.photo6 {
+  background-image: url(../images/bbfphoto6.jpg); }
+
+/* line 49, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.barre {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  height: 10px;
+  width: 0px;
+  background-color: #FBF3F4; }
+
+/*-----Navigation-----*/
+/* line 52, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.encart_bas {
+  width: 100%;
+  background-color: #050505;
+  z-index: 11;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  opacity: 0; }
+
+/* line 53, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.navigation {
+  width: 1160px;
+  height: 150px;
+  background-color: white;
+  margin-top: 50px; }
+
+/* line 54, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.precedent {
+  height: 150px;
+  width: 50%;
+  background-color: #ECD9DB;
+  color: #050505 !important;
+  position: relative;
+  z-index: 11;
+  display: flex;
+  justify-content: center; }
+
+/* line 55, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.suivant {
+  height: 150px;
+  width: 50%;
+  background-color: #FBF3F4;
+  color: #050505 !important;
+  position: relative;
+  z-index: 11;
+  display: flex;
+  justify-content: center; }
+
+/* line 56, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.navigation_line {
+  position: relative;
+  width: 50px;
+  height: 1px;
+  background-color: #050505;
+  z-index: 11; }
+
+/* line 57, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.line_s {
+  right: -20px; }
+
+/* line 58, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.line_p {
+  left: -20px; }
+
+/*-----Eugenie Barron-----*/
+/* line 61, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.photo_ebe1 {
+  background-image: url(../images/ebephoto1.jpg); }
+
+/* line 62, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.photo_ebe2 {
+  background-image: url(../images/ebephoto2.jpg); }
+
+/* line 63, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.photo_ebe3 {
+  background-image: url(../images/ebephoto3.jpg);
+  background-position: bottom; }
+
+/* line 64, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.photo_ebe4 {
+  background-image: url(../images/ebephoto4.jpg);
+  background-position: top; }
+
+/* line 65, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.photo_ebe5 {
+  background-image: url(../images/ebephoto5.jpg); }
+
+/* line 66, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.photo_ebe6 {
+  background-image: url(../images/ebephoto6.jpg); }
+
+/* line 67, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.site {
+  width: 100%;
+  flex-direction: column; }
+
+/* line 68, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.presentation_web {
+  width: 0%;
+  flex-direction: column;
+  margin-top: -100px;
+  background-color: #FBF3F4; }
+
+/* line 69, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.bandeau_site {
+  height: 450px;
+  background-color: #FBF3F4;
+  width: 0%;
+  justify-content: center; }
+
+/* line 70, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.logo_ebe {
+  width: 300px;
+  opacity: 0; }
+
+/* line 71, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.background {
+  opacity: 0; }
+
+/* line 72, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.line_bandeau {
+  position: absolute;
+  top: 15px;
+  right: -70px;
+  height: 1px;
+  width: 0;
+  background-color: black; }
+
+/* line 73, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.boite1 {
+  position: relative; }
+
+/*-----MAEC INC-----*/
+/* line 76, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.photo_maec1 {
+  background-image: url(../images/maecphoto1.jpg); }
+
+/* line 77, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.photo_maec2 {
+  background-image: url(../images/maecphoto2.jpg); }
+
+/* line 78, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.photo_maec3 {
+  background-image: url(../images/maecphoto3.jpg);
+  background-position: bottom; }
+
+/* line 79, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.photo_maec4 {
+  background-image: url(../images/maecphoto4.jpg);
+  background-position: top; }
+
+/* line 80, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.photo_maec5 {
+  background-image: url(../images/maecphoto5.jpg); }
+
+/* line 81, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.photo_maec6 {
+  background-image: url(../images/maecphoto6.jpg); }
+
+/*-----Coté Bassin-----*/
+/* line 84, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.photo_cb1 {
+  background-image: url(../images/cbphoto1.jpg); }
+
+/* line 85, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.photo_cb2 {
+  background-image: url(../images/cbphoto2.jpg); }
+
+/* line 86, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.photo_cb3 {
+  background-image: url(../images/cbphoto3.jpg);
+  background-position: center; }
+
+/* line 87, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.photo_cb4 {
+  background-image: url(../images/cbphoto4.jpg);
+  background-position: center; }
+
+/* line 88, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.photo_cb5 {
+  background-image: url(../images/cbphoto5.jpg); }
+
+/* line 89, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.photo_cb6 {
+  background-image: url(../images/cbphoto6.jpg); }
+
+/*-----33 PREST-----*/
+/* line 92, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.photo_33p1 {
+  background-image: url(../images/33pphoto1.jpg); }
+
+/* line 93, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.photo_33p2 {
+  background-image: url(../images/33pphoto2.jpg); }
+
+/* line 94, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.photo_33p3 {
+  background-image: url(../images/33pphoto3.jpg);
+  background-position: center; }
+
+/* line 95, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.photo_33p4 {
+  background-image: url(../images/33pphoto4.jpg);
+  background-position: center; }
+
+/* line 96, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.photo_33p5 {
+  background-image: url(../images/33pphoto5.jpg); }
+
+/* line 97, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.photo_33p6 {
+  background-image: url(../images/33pphoto6.jpg); }
+
+/*-----Mindful-----*/
+/* line 100, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.photo_m1 {
+  background-image: url(../images/mphoto1.jpg); }
+
+/* line 101, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.photo_m2 {
+  background-image: url(../images/mphoto2.jpg); }
+
+/* line 102, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.photo_m3 {
+  background-image: url(../images/mphoto3.jpg);
+  background-position: center; }
+
+/* line 103, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.photo_m4 {
+  background-image: url(../images/mphoto4.jpg);
+  background-position: center; }
+
+/* line 104, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.photo_m5 {
+  background-image: url(../images/mphoto5.jpg); }
+
+/* line 105, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.photo_m6 {
+  background-image: url(../images/mphoto6.jpg); }
+
+/*-----Toi et Moi-----*/
+/* line 108, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.photo_tm1 {
+  background-image: url(../images/tmphoto1.jpg); }
+
+/* line 109, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.photo_tm2 {
+  background-image: url(../images/tmphoto2.jpg); }
+
+/* line 110, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.photo_tm3 {
+  background-image: url(../images/tmphoto3.jpg);
+  background-position: center; }
+
+/* line 111, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.photo_tm4 {
+  background-image: url(../images/tmphoto4.jpg);
+  background-position: center; }
+
+/* line 112, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.photo_tm5 {
+  background-image: url(../images/tmphoto5.jpg); }
+
+/* line 113, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.photo_tm6 {
+  background-image: url(../images/tmphoto6.jpg); }
+
+/*-----Soa-----*/
+/* line 116, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.photo_soa1 {
+  background-image: url(../images/soaphoto1.jpg); }
+
+/* line 117, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.photo_soa2 {
+  background-image: url(../images/soaphoto2.jpg); }
+
+/* line 118, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.photo_soa3 {
+  background-image: url(../images/soaphoto3.jpg);
+  background-position: center; }
+
+/* line 119, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.photo_soa4 {
+  background-image: url(../images/soaphoto4.jpg);
+  background-position: center; }
+
+/* line 120, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.photo_soa5 {
+  background-image: url(../images/soaphoto5.jpg); }
+
+/* line 121, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.photo_soa6 {
+  background-image: url(../images/soaphoto6.jpg); }
+
+/*-----LPDN-----*/
+/* line 124, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.photo_lpdn1 {
+  background-image: url(../images/lpdnphoto1.jpg);
+  background-repeat: no-repeat; }
+
+/* line 125, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.photo_lpdn2 {
+  background-image: url(../images/lpdnphoto2.jpg);
+  background-repeat: no-repeat; }
+
+/* line 126, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.photo_lpdn3 {
+  background-image: url(../images/lpdnphoto3.jpg);
+  background-position: center; }
+
+/* line 127, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.photo_lpdn4 {
+  background-image: url(../images/lpdnphoto4.jpg);
+  background-position: center; }
+
+/* line 128, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.photo_lpdn5 {
+  background-image: url(../images/lpdnphoto5.jpg); }
+
+/* line 129, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.photo_lpdn6 {
+  background-image: url(../images/lpdnphoto6.jpg); }
+
+/*-----LJDE-----*/
+/* line 132, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.photo_jde1 {
+  background-image: url(../images/jdephoto1.jpg);
+  background-repeat: no-repeat; }
+
+/* line 133, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.photo_jde2 {
+  background-image: url(../images/jdephoto2.jpg);
+  background-repeat: no-repeat; }
+
+/* line 134, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.photo_jde3 {
+  background-image: url(../images/jdephoto3.jpg);
+  background-position: bottom; }
+
+/* line 135, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.photo_jde4 {
+  background-image: url(../images/jdephoto4.jpg);
+  background-position: top; }
+
+/* line 136, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.photo_jde5 {
+  background-image: url(../images/jdephoto5.jpg); }
+
+/* line 137, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+.photo_jde6 {
+  background-image: url(../images/jdephoto6.jpg); }
+
+@media only screen and (min-width: 1670px) and (max-width: 2350px) {
+  /* line 141, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .pr_photo {
+    height: 700px;
+    width: 1500px; }
+
+  /* line 142, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .spacer_header2 {
+    height: 0px; }
+
+  /* line 143, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .spacer_header {
+    height: 120px; }
+
+  /* line 144, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .position_photo1 {
+    position: absolute;
+    height: 350px;
+    background-position: bottom;
+    background-size: cover; }
+
+  /* line 145, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .position_photo2 {
+    position: absolute;
+    height: 350px;
+    background-position: top;
+    background-size: cover; }
+
+  /* line 146, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .navigation {
+    height: 110px; }
+
+  /* line 147, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .precedent {
+    height: 110px; }
+
+  /* line 148, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .suivant {
+    height: 110px; }
+
+  /* line 149, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .photo_lpdn1 {
+    background-image: url(../images/lpdnphoto1-16.jpg); }
+
+  /* line 150, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .photo_lpdn2 {
+    background-image: url(../images/lpdnphoto2-16.jpg); } }
+@media only screen and (min-width: 1435px) and (max-width: 1669px) {
+  /* line 154, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .pr_photo {
+    height: 600px;
+    width: 1100px; }
+
+  /* line 155, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .spacer_header2 {
+    height: 0px; }
+
+  /* line 156, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .spacer_header {
+    height: 100px; }
+
+  /* line 157, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .position_photo1 {
+    position: absolute;
+    height: 300px;
+    background-position: bottom;
+    background-size: cover; }
+
+  /* line 158, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .position_photo2 {
+    position: absolute;
+    height: 300px;
+    background-position: top;
+    background-size: cover; }
+
+  /* line 159, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .navigation {
+    height: 100px; }
+
+  /* line 160, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .precedent {
+    height: 100px; }
+
+  /* line 161, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .suivant {
+    height: 100px; }
+
+  /* line 162, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .photo_lpdn1 {
+    background-image: url(../images/lpdnphoto1-12.jpg); }
+
+  /* line 163, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .photo_lpdn2 {
+    background-image: url(../images/lpdnphoto2-12.jpg); } }
+@media only screen and (min-width: 1270px) and (max-width: 1434px) {
+  /* line 167, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  html {
+    font-size: 9px; }
+
+  /* line 168, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .estampille {
+    display: none; }
+
+  /* line 169, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .pr_photo {
+    height: 500px;
+    width: 1100px; }
+
+  /* line 170, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .spacer_header2 {
+    height: 0px; }
+
+  /* line 171, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .spacer_header {
+    height: 100px; }
+
+  /* line 172, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .position_photo1 {
+    position: absolute;
+    height: 250px; }
+
+  /* line 173, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .position_photo2 {
+    position: absolute;
+    height: 250px; }
+
+  /* line 174, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .navigation {
+    height: 100px; }
+
+  /* line 175, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .precedent {
+    height: 100px; }
+
+  /* line 176, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .suivant {
+    height: 100px; }
+
+  /* line 177, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .photo_lpdn1 {
+    background-image: url(../images/lpdnphoto1-12.jpg); }
+
+  /* line 178, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .photo_lpdn2 {
+    background-image: url(../images/lpdnphoto2-12.jpg); }
+
+  /* line 179, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .photo_left {
+    width: 500px;
+    height: 500px; }
+
+  /* line 180, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .photo_right {
+    height: 550px; }
+
+  /* line 181, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .position_photo1 {
+    height: 250px;
+    background-position: bottom;
+    background-size: cover; }
+
+  /* line 182, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .position_photo2 {
+    height: 250px;
+    background-position: top;
+    background-size: cover; }
+
+  /* line 183, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .position_photo3 {
+    height: 250px;
+    background-position: bottom; }
+
+  /* line 184, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .position_photo4 {
+    height: 250px;
+    background-position: top; }
+
+  /* line 185, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .position_photo5 {
+    height: 275px;
+    background-position: bottom; }
+
+  /* line 186, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .position_photo6 {
+    height: 275px;
+    background-position: top; }
+
+  /* line 187, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .bande1 {
+    top: 450px;
+    height: 200px; }
+
+  /* line 188, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .texte1 {
+    left: 280px; }
+
+  /* line 189, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .texte2 {
+    left: 550px;
+    top: 0px; }
+
+  /* line 190, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .texte5 {
+    top: -10px; }
+
+  /* line 191, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .bande1 {
+    top: 410px;
+    height: 200px; }
+
+  /* line 192, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .texte3 {
+    left: 550px;
+    top: 70px; }
+
+  /* line 193, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .navigation {
+    height: 70px;
+    margin-top: 20px; }
+
+  /* line 194, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .precedent {
+    height: 70px; }
+
+  /* line 195, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .suivant {
+    height: 70px; }
+
+  /* line 196, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .title {
+    line-height: 60px; } }
+@media only screen and (min-width: 1020px) and (max-width: 1269px) {
+  /* line 201, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  html {
+    font-size: 8px; }
+
+  /* line 202, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .estampille {
+    display: none; }
+
+  /* line 203, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .pr_photo {
+    height: 500px;
+    width: 800px; }
+
+  /* line 204, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .spacer_header2 {
+    height: 0px; }
+
+  /* line 205, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .spacer_header {
+    height: 100px; }
+
+  /* line 206, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .navigation {
+    height: 100px; }
+
+  /* line 207, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .precedent {
+    height: 100px; }
+
+  /* line 208, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .suivant {
+    height: 100px; }
+
+  /* line 209, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .texte1 {
+    left: 280px; }
+
+  /* line 210, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .texte2 {
+    left: 450px;
+    top: 0px; }
+
+  /* line 211, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .texte5 {
+    top: -10px; }
+
+  /* line 212, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .bande1 {
+    top: 410px;
+    height: 200px; }
+
+  /* line 213, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .texte3 {
+    left: 450px;
+    top: 55px; }
+
+  /* line 214, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .trame_projet {
+    width: 900px; }
+
+  /* line 215, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .photo_left {
+    width: 400px;
+    height: 400px; }
+
+  /* line 216, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .trame_right {
+    height: 700px; }
+
+  /* line 217, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .photo_right {
+    width: 400px;
+    height: 500px; }
+
+  /* line 218, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .photo_rightcenter {
+    height: 600px; }
+
+  /* line 219, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .title {
+    line-height: 50px; }
+
+  /* line 220, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .photo_lpdn1 {
+    background-image: url(../images/lpdnphoto1-12.jpg); }
+
+  /* line 221, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .photo_lpdn2 {
+    background-image: url(../images/lpdnphoto2-12.jpg); }
+
+  /* line 222, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .position_photo1 {
+    height: 250px;
+    background-position: bottom;
+    background-size: cover; }
+
+  /* line 223, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .position_photo2 {
+    height: 250px;
+    background-position: top;
+    background-size: cover; }
+
+  /* line 224, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .position_photo3 {
+    height: 200px;
+    background-position: bottom;
+    background-size: cover; }
+
+  /* line 225, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .position_photo4 {
+    height: 200px;
+    background-position: top;
+    background-size: cover; }
+
+  /* line 226, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .position_photo5 {
+    height: 250px;
+    background-position: bottom;
+    background-size: cover; }
+
+  /* line 227, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .position_photo6 {
+    height: 250px;
+    background-position: top;
+    background-size: cover; }
+
+  /* line 228, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .img_web {
+    width: 80%; } }
+@media only screen and (min-width: 767px) and (max-width: 1019px) {
+  /* line 232, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  html {
+    font-size: 8px; }
+
+  /* line 233, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .estampille {
+    display: none; }
+
+  /* line 234, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .trame_projet {
+    width: 700px; }
+
+  /* line 235, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .position_photo3 {
+    height: 200px;
+    background-position: bottom;
+    background-size: cover; }
+
+  /* line 236, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .position_photo4 {
+    height: 200px;
+    background-position: top;
+    background-size: cover; }
+
+  /* line 237, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .position_photo5 {
+    height: 250px;
+    background-position: bottom;
+    background-size: cover; }
+
+  /* line 238, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .position_photo6 {
+    height: 250px;
+    background-position: top;
+    background-size: cover; }
+
+  /* line 239, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .photo_left {
+    width: 400px;
+    height: 400px; }
+
+  /* line 240, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .photo_leftcenter {
+    flex-direction: column; }
+
+  /* line 241, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .photo_right {
+    width: 400px;
+    height: 500px; }
+
+  /* line 242, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .position_photo3 {
+    Z-index: 3; }
+
+  /* line 243, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .position_photo4 {
+    Z-index: 2; }
+
+  /* line 244, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .texte1 {
+    top: 290px;
+    width: 320px; }
+
+  /* line 245, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .texte2 {
+    top: 120px;
+    left: 0px;
+    display: block; }
+
+  /* line 246, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .texte3 {
+    left: 0px;
+    top: 310px; }
+
+  /* line 247, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .texte5 {
+    top: -30px;
+    width: 300px;
+    height: 330px;
+    right: 250px; }
+
+  /* line 248, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .title {
+    line-height: 50px; }
+
+  /* line 249, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .navigation {
+    width: 100%;
+    height: 100px; }
+
+  /* line 250, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .precedent {
+    height: 100px; }
+
+  /* line 251, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .suivant {
+    height: 100px; }
+
+  /* line 252, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .spacer_header2 {
+    height: 0px; }
+
+  /* line 253, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .pr_photo {
+    height: 400px;
+    width: 700px; }
+
+  /* line 254, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .position_photo1 {
+    height: 200px;
+    background-position: bottom;
+    background-size: cover; }
+
+  /* line 255, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .position_photo2 {
+    height: 200px;
+    background-position: top;
+    background-size: cover; }
+
+  /* line 256, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .img_web {
+    width: 80%; } }
+@media only screen and (min-width: 0px) and (max-width: 766px) {
+  /* line 260, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  html {
+    font-size: 6px; }
+
+  /* line 261, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .estampille {
+    display: none; }
+
+  /* line 262, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .trame_projet {
+    width: 350px; }
+
+  /* line 263, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .bande1 {
+    height: 130px;
+    top: 350px; }
+
+  /* line 264, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .photo_left {
+    width: 250px;
+    height: 250px; }
+
+  /* line 265, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .photo_right {
+    width: 200px;
+    height: 300px; }
+
+  /* line 266, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .pr_photo {
+    height: 400px;
+    width: 350px; }
+
+  /* line 267, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .bande1 {
+    top: 530px; }
+
+  /* line 268, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .title {
+    line-height: 30px;
+    font-size: 3rem;
+    width: 250px; }
+
+  /* line 269, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .texte2 {
+    width: 350px;
+    left: 0px;
+    line-height: 20px; }
+
+  /* line 270, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .texte3 {
+    width: 350px;
+    left: 0px;
+    line-height: 20px;
+    top: 180px; }
+
+  /* line 271, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .texte5 {
+    width: 140px;
+    top: -150px; }
+
+  /* line 272, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .texte7 {
+    width: 140px;
+    top: -150px;
+    height: 220px; }
+
+  /* line 273, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .subtitle {
+    line-height: 30px; }
+
+  /* line 274, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .courant {
+    line-height: 19px; }
+
+  /* line 275, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .img_web {
+    width: 80%; }
+
+  /* line 276, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .navigation {
+    width: 100%;
+    height: 70px; }
+
+  /* line 277, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .precedent {
+    height: 70px; }
+
+  /* line 278, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .suivant {
+    height: 70px; }
+
+  /* line 281, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .position_photo1 {
+    height: 200px;
+    background-position: bottom;
+    background-size: cover; }
+
+  /* line 282, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .position_photo2 {
+    height: 200px;
+    background-position: top;
+    background-size: cover; }
+
+  /* line 283, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .position_photo3 {
+    height: 125px; }
+
+  /* line 284, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .position_photo4 {
+    height: 125px; }
+
+  /* line 285, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .position_photo5 {
+    height: 150px; }
+
+  /* line 286, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .position_photo6 {
+    height: 150px; }
+
+  /*-----BBF-----*/
+  /* line 290, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .photo3 {
+    background-image: url(../images/bbfphoto3m.jpg);
+    background-position: center; }
+
+  /* line 291, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .photo4 {
+    background-image: url(../images/bbfphoto4m.jpg);
+    background-position: center; }
+
+  /* line 292, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .photo5 {
+    background-image: url(../images/bbfphoto5m.jpg); }
+
+  /* line 293, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .photo6 {
+    background-image: url(../images/bbfphoto6m.jpg); }
+
+  /*-----Eugenie Barron-----*/
+  /* line 297, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .photo_ebe3 {
+    background-image: url(../images/ebephoto3m.jpg);
+    background-position: bottom; }
+
+  /* line 298, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .photo_ebe4 {
+    background-image: url(../images/ebephoto4m.jpg);
+    background-position: top; }
+
+  /* line 299, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .photo_ebe5 {
+    background-image: url(../images/ebephoto5m.jpg);
+    background-position: bottom; }
+
+  /* line 300, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .photo_ebe6 {
+    background-image: url(../images/ebephoto6m.jpg);
+    background-position: top; }
+
+  /*-----MAEC INC-----*/
+  /* line 303, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .photo_maec3 {
+    background-image: url(../images/maecphoto3m.jpg);
+    background-position: bottom; }
+
+  /* line 304, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .photo_maec4 {
+    background-image: url(../images/maecphoto4m.jpg);
+    background-position: top; }
+
+  /* line 305, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .photo_maec5 {
+    background-image: url(../images/maecphoto5m.jpg);
+    background-position: bottom; }
+
+  /* line 306, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .photo_maec6 {
+    background-image: url(../images/maecphoto6m.jpg);
+    background-position: top; }
+
+  /*-----Coté Bassin-----*/
+  /* line 309, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .photo_cb3 {
+    background-image: url(../images/cbphoto3m.jpg);
+    background-position: center; }
+
+  /* line 310, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .photo_cb4 {
+    background-image: url(../images/cbphoto4m.jpg);
+    background-position: center; }
+
+  /* line 311, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .photo_cb5 {
+    background-image: url(../images/cbphoto5m.jpg); }
+
+  /* line 312, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .photo_cb6 {
+    background-image: url(../images/cbphoto6m.jpg); }
+
+  /*-----33 PREST-----*/
+  /* line 315, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .photo_33p3 {
+    background-image: url(../images/33pphoto3m.jpg);
+    background-position: center; }
+
+  /* line 316, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .photo_33p4 {
+    background-image: url(../images/33pphoto4m.jpg);
+    background-position: center; }
+
+  /* line 317, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .photo_33p5 {
+    background-image: url(../images/33pphoto5m.jpg); }
+
+  /* line 318, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .photo_33p6 {
+    background-image: url(../images/33pphoto6m.jpg); }
+
+  /*-----Mindful-----*/
+  /* line 321, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .photo_m3 {
+    background-image: url(../images/mphoto3m.jpg);
+    background-position: center; }
+
+  /* line 322, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .photo_m4 {
+    background-image: url(../images/mphoto4m.jpg);
+    background-position: center; }
+
+  /* line 323, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .photo_m5 {
+    background-image: url(../images/mphoto5m.jpg); }
+
+  /* line 324, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .photo_m6 {
+    background-image: url(../images/mphoto6m.jpg); }
+
+  /*-----Toi et Moi-----*/
+  /* line 327, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .photo_tm3 {
+    background-image: url(../images/tmphoto3m.jpg);
+    background-position: center; }
+
+  /* line 328, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .photo_tm4 {
+    background-image: url(../images/tmphoto4m.jpg);
+    background-position: center; }
+
+  /* line 329, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .photo_tm5 {
+    background-image: url(../images/tmphoto5m.jpg); }
+
+  /* line 330, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .photo_tm6 {
+    background-image: url(../images/tmphoto6m.jpg); }
+
+  /*-----Soa-----*/
+  /* line 333, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .photo_soa3 {
+    background-image: url(../images/soaphoto3m.jpg);
+    background-position: center; }
+
+  /* line 334, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .photo_soa4 {
+    background-image: url(../images/soaphoto4m.jpg);
+    background-position: center; }
+
+  /* line 335, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .photo_soa5 {
+    background-image: url(../images/soaphoto5m.jpg); }
+
+  /* line 336, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .photo_soa6 {
+    background-image: url(../images/soaphoto6m.jpg); }
+
+  /*-----LPDN-----*/
+  /* line 339, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .photo_lpdn3 {
+    background-image: url(../images/lpdnphoto3m.jpg); }
+
+  /* line 340, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .photo_lpdn4 {
+    background-image: url(../images/lpdnphoto4m.jpg); }
+
+  /* line 341, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .photo_lpdn5 {
+    background-image: url(../images/lpdnphoto5m.jpg); }
+
+  /* line 342, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .photo_lpdn6 {
+    background-image: url(../images/lpdnphoto6m.jpg); }
+
+  /*-----LJDE-----*/
+  /* line 345, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .photo_jde3 {
+    background-image: url(../images/jdephoto3m.jpg); }
+
+  /* line 346, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .photo_jde4 {
+    background-image: url(../images/jdephoto4m.jpg); }
+
+  /* line 347, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .photo_jde5 {
+    background-image: url(../images/jdephoto5m.jpg); }
+
+  /* line 348, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_projets.css.scss */
+  .photo_jde6 {
+    background-image: url(../images/jdephoto6m.jpg); } }
+/* line 1, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 48px;
+  font-family: sabon roman;
+  background-color: #FBF3F4; }
+
+/* line 2, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+.ac_spacer {
+  height: 400px;
+  width: 100%; }
+
+/* line 3, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+.ac_spacer1 {
+  height: 750px;
+  width: 100%; }
+
+/* line 4, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+#encart_left a:visited {
+  color: #FBF3F4 !important; }
+
+/* line 5, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+.scroll {
+  position: fixed;
+  bottom: 0px;
+  left: 50%;
+  z-index: 99;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  opacity: 1; }
+
+/* line 6, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+h3 {
+  font-weight: 500; }
+
+/* line 7, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+h4 {
+  font-weight: 500; }
+
+/* line 8, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+h1 {
+  font-family: sabon roman;
+  letter-spacing: 3px;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-weight: 500; }
+
+/* line 9, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+.vertical_line3 {
+  width: 1px;
+  height: 30px;
+  background-color: #050505; }
+
+/* line 10, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+.estampille {
+  position: fixed;
+  top: 20px;
+  right: 40px;
+  z-index: 4;
+  background-image: url(../images/estampillestudio.svg);
+  width: 120px;
+  height: 120px;
+  background-repeat: no-repeat; }
+
+/*-----Slider-----*/
+/* line 14, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+.left {
+  width: 50%;
+  height: 3650px;
+  background: #FBF3F4;
+  color: #fff;
+  text-align: center;
+  float: left; }
+
+/* line 15, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+.alignement1 {
+  top: calc(50vh - 375px);
+  position: relative;
+  opacity: 1; }
+
+/* line 16, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+.right {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  background: #FBF3F4;
+  float: left;
+  text-align: center; }
+
+/* line 17, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+.alignement2 {
+  bottom: calc(50vh - 250px);
+  position: relative;
+  opacity: 1; }
+
+/*-----Fin-Slider-----*/
+/*-----Barre-Gauche----*/
+/* line 21, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+.left-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 100%;
+  z-index: 3; }
+
+/* line 22, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+#plus-realisation {
+  cursor: pointer;
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg); }
+
+/* line 23, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+#plus-realisation h3 {
+  width: 255px;
+  font-size: 1.8rem;
+  letter-spacing: 2px; }
+
+/* line 24, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+.bg {
+  width: 0;
+  height: 40px;
+  background-color: #050505; }
+
+/* line 25, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+h4 {
+  width: 220px;
+  font-size: 1.6rem;
+  letter-spacing: 2px;
+  color: #ECD9DB;
+  padding-left: 10px;
+  text-transform: uppercase;
+  line-height: 0px; }
+
+/* line 26, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+h5 {
+  width: 130px;
+  font-size: 1.6rem;
+  letter-spacing: 2px;
+  color: #ECD9DB;
+  text-transform: uppercase;
+  line-height: 0px; }
+
+/*-----Fin-Barre-Gauche----*/
+/*-----Barre-Droite----*/
+/* line 30, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+.right-bar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3; }
+
+/* line 32, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+#studio-de-communication {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg); }
+
+/* line 33, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+#studio-de-communication h3 {
+  width: 275px;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 3px; }
+
+/*-----Fin-Barre-Droite----*/
+/*-----Menu-Realisations----*/
+/* line 38, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+#menu-plus-realisations {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #050505;
+  z-index: 3; }
+
+/* line 39, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+#encart_projets {
+  width: 0px;
+  height: 800px;
+  background-color: #050505;
+  position: relative; }
+
+/* line 40, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+#encart_left {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 50%; }
+
+/* line 41, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+#encart_right {
+  position: relative;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 50%; }
+
+/* line 42, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+#liste_projets {
+  display: none;
+  height: 600px;
+  opacity: 0;
+  font-size: 20px;
+  letter-spacing: 3px;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  color: #FBF3F4; }
+
+/* line 43, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+#encart_photo {
+  display: none;
+  height: 600px;
+  width: 500px;
+  opacity: 0;
+  position: relative; }
+
+/* line 44, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+li span {
+  font-size: 12px;
+  margin-right: 10px;
+  padding-left: 20px; }
+
+/* line 45, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+.photo_initiale {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%; }
+
+/* line 47, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+.photo_projet01 {
+  background: url("../images/realisation_lpdn.jpg");
+  width: 0%; }
+
+/* line 48, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+.photo_projet02 {
+  background: url("../images/realisation_maec.jpg");
+  width: 0%; }
+
+/* line 49, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+.photo_projet03 {
+  background: url("../images/jde_realisation.jpg");
+  width: 0%; }
+
+/* line 50, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+.photo_projet04 {
+  background: url("../images/realisation_ebe.jpg");
+  width: 0%; }
+
+/* line 51, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+.photo_projet05 {
+  background-color: yellow;
+  width: 0%; }
+
+/* line 52, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+.photo_projet06 {
+  background: url("../images/realisation_bbf.jpg");
+  width: 0%; }
+
+/* line 53, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+.photo_projet07 {
+  background: url("../images/realisation_cotebassin.jpg");
+  width: 0%; }
+
+/* line 54, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+.photo_projet08 {
+  background: url("../images/realisation_33prest.jpg");
+  width: 0%; }
+
+/* line 55, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+.photo_projet09 {
+  background: url("../images/realisation_mindful.jpg");
+  width: 0%; }
+
+/* line 56, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+.photo_projet10 {
+  background: url("../images/realisation_soa.jpg");
+  width: 0%; }
+
+/* line 57, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+.photo_projet11 {
+  background: url("../images/realisation_toietmoi.jpg");
+  width: 0%; }
+
+/* line 58, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+.photo_projet12 {
+  background: url("../images/realisation_collages.jpg");
+  width: 0%; }
+
+/*-----Fin-Menu-Realisations----*/
+/*-----Animation-Realisations----*/
+/* line 64, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+.realisation_left {
+  float: right;
+  height: 750px;
+  width: 600px; }
+
+/* line 66, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+.position_left {
+  position: relative;
+  display: flex;
+  justify-content: flex-end; }
+
+/* line 67, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+.position_img_left {
+  z-index: 2;
+  position: relative;
+  right: -40px; }
+
+/* line 68, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+.descriptif_left {
+  position: absolute;
+  top: 110px;
+  right: 450px;
+  height: 300px;
+  width: 400px; }
+
+/* line 69, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+.position_right {
+  position: relative;
+  display: flex;
+  justify-content: flex-start; }
+
+/* line 70, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+.position_img_right {
+  z-index: 2;
+  position: relative;
+  left: -40px; }
+
+/* line 72, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+.descriptif_right {
+  position: absolute;
+  bottom: -100px;
+  left: calc(50% - 375px);
+  height: 100px;
+  width: 750px;
+  display: flex;
+  align-items: center; }
+
+/* line 73, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+.description_haut {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  color: black;
+  font-family: sabon roman;
+  text-align: left;
+  height: 40px; }
+
+/* line 74, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+.description_bas {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  color: black;
+  font-size: 2rem;
+  font-family: brandon grotesque; }
+
+/* line 76, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+.line_ac {
+  width: 0px;
+  height: 1px;
+  background-color: #050505;
+  margin: 40px 0px 10px 0px; }
+
+/* line 77, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+.description_ac {
+  width: 400px;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  position: relative;
+  left: -50px;
+  opacity: 0; }
+
+@media only screen and (min-width: 1020px) and (max-width: 1278px) {
+  /* line 80, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+  .estampille {
+    z-index: 99; } }
+@media only screen and (min-width: 1671px) and (max-width: 2000px) {
+  /* line 83, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+  html {
+    font-size: 9px; }
+
+  /* line 84, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+  .position_img_left {
+    wdth: auto;
+    height: 600px; }
+
+  /* line 85, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+  .position_img_right {
+    wdth: auto;
+    height: 400px; }
+
+  /* line 86, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+  .alignement1 {
+    top: calc(50vh - 300px); }
+
+  /* line 87, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+  .alignement2 {
+    bottom: calc(50vh - 200px); }
+
+  /* line 88, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+  .descriptif_left {
+    right: 280px; }
+
+  /* line 89, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+  .descriptif_right {
+    left: calc(50% - 280px); }
+
+  /* line 90, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+  .left {
+    height: 2950px; }
+
+  /* line 91, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+  .ac_spacer {
+    height: 300px;
+    width: 100%; }
+
+  /* line 92, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+  .ac_spacer1 {
+    height: 600px;
+    width: 100%; } }
+@media only screen and (min-width: 1439px) and (max-width: 1670px) {
+  /* line 95, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+  html {
+    font-size: 9px; }
+
+  /* line 96, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+  .position_img_left {
+    wdth: auto;
+    height: 550px; }
+
+  /* line 97, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+  .position_img_right {
+    wdth: auto;
+    height: 370px; }
+
+  /* line 98, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+  .alignement1 {
+    top: calc(50vh - 225px); }
+
+  /* line 99, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+  .alignement2 {
+    bottom: calc(50vh - 230px); }
+
+  /* line 100, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+  .descriptif_left {
+    right: 250px; }
+
+  /* line 101, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+  .descriptif_right {
+    left: calc(50% - 185px); }
+
+  /* line 102, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+  .left {
+    height: 2750px; }
+
+  /* line 103, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+  .ac_spacer {
+    height: 300px;
+    width: 100%; }
+
+  /* line 104, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+  .ac_spacer1 {
+    height: 600px;
+    width: 100%; } }
+@media only screen and (min-width: 1279px) and (max-width: 1438px) {
+  /* line 108, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+  html {
+    font-size: 9px; }
+
+  /* line 109, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+  .position_img_left {
+    wdth: auto;
+    height: 450px; }
+
+  /* line 110, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+  .position_img_right {
+    wdth: auto;
+    height: 300px; }
+
+  /* line 111, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+  .alignement1 {
+    top: calc(50vh - 250px); }
+
+  /* line 112, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+  .alignement2 {
+    bottom: calc(50vh - 150px); }
+
+  /* line 113, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+  .descriptif_left {
+    right: 170px; }
+
+  /* line 114, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+  .descriptif_right {
+    left: calc(50% - 225px); }
+
+  /* line 115, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+  #encart_photo {
+    height: 540px;
+    width: 450px; }
+
+  /* line 116, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+  #liste_projets {
+    height: 500px; }
+
+  /* line 117, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+  .scroll {
+    left: 45%; }
+
+  /* line 118, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+  .left {
+    height: 2800px; }
+
+  /* line 119, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+  .spacer_header {
+    height: 20px; } }
+@media only screen and (min-width: 1023px) and (max-width: 1278px) {
+  /* line 122, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+  html {
+    font-size: 9px; }
+
+  /* line 123, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+  .position_img_left {
+    wdth: auto;
+    height: 450px; }
+
+  /* line 124, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+  .position_img_right {
+    wdth: auto;
+    height: 300px; }
+
+  /* line 125, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+  .alignement1 {
+    top: calc(50vh - 250px); }
+
+  /* line 126, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+  .alignement2 {
+    bottom: calc(50vh - 150px); }
+
+  /* line 127, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+  .descriptif_left {
+    right: 115px; }
+
+  /* line 128, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+  .descriptif_right {
+    left: calc(50% - 180px); }
+
+  /* line 129, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+  #encart_photo {
+    height: 540px;
+    width: 450px; }
+
+  /* line 130, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+  #liste_projets {
+    height: 500px; }
+
+  /* line 131, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+  .description_ac {
+    width: 190px;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    margin-left: 10px; }
+
+  /* line 132, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+  .ac_spacer {
+    height: 300px;
+    width: 100%; }
+
+  /* line 133, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+  .ac_spacer1 {
+    height: 600px;
+    width: 100%; }
+
+  /* line 134, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+  .left {
+    height: 2700px; } }
+@media only screen and (min-width: 767px) and (max-width: 1022px) {
+  /* line 137, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+  html {
+    font-size: 9px; }
+
+  /* line 138, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+  .position_img_left {
+    wdth: auto;
+    height: 450px;
+    right: -10px; }
+
+  /* line 139, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+  .position_img_right {
+    wdth: auto;
+    height: 300px; }
+
+  /* line 140, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+  .alignement1 {
+    top: calc(50vh - 225px); }
+
+  /* line 141, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+  .alignement2 {
+    bottom: calc(50vh - 150px); }
+
+  /* line 142, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+  .descriptif_left {
+    right: -70px;
+    top: -100px; }
+
+  /* line 143, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+  .descriptif_right {
+    left: calc(50% - 120px); }
+
+  /* line 144, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+  #encart_left {
+    width: 100%; }
+
+  /* line 145, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+  #liste_projets {
+    height: 500px; }
+
+  /* line 146, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+  .description_ac {
+    width: 250px;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    margin-left: 10px; }
+
+  /* line 147, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+  .ac_spacer {
+    height: 300px;
+    width: 100%; }
+
+  /* line 148, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+  .ac_spacer1 {
+    height: 600px;
+    width: 100%; }
+
+  /* line 149, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+  .left {
+    height: 2700px; }
+
+  /* line 150, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+  #encart_right {
+    display: none; } }
+@media only screen and (min-width: 370px) and (max-width: 766px) {
+  /* line 153, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+  html {
+    font-size: 8px; }
+
+  /* line 154, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+  .position_img_left {
+    wdth: auto;
+    height: 270px; }
+
+  /* line 155, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+  .position_img_right {
+    wdth: auto;
+    height: 180px; }
+
+  /* line 156, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+  .alignement1 {
+    top: calc(50vh - 135px); }
+
+  /* line 157, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+  .alignement2 {
+    bottom: calc(50vh - 90px); }
+
+  /* line 158, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+  .descriptif_left {
+    display: none; }
+
+  /* line 159, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+  .descriptif_right {
+    display: none; }
+
+  /* line 160, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+  #encart_left {
+    width: 100%; }
+
+  /* line 161, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+  #liste_projets {
+    height: 450px; }
+
+  /* line 162, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+  .description_ac {
+    display: none; }
+
+  /* line 163, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+  .ac_spacer {
+    height: 250px;
+    width: 100%; }
+
+  /* line 164, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+  .ac_spacer1 {
+    height: 400px;
+    width: 100%; }
+
+  /* line 165, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+  .left {
+    height: 1850px; }
+
+  /* line 166, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+  #encart_right {
+    display: none; }
+
+  /* line 167, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+  .line_ac {
+    display: none; }
+
+  /* line 168, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+  .scroll {
+    left: 40%; }
+
+  /* line 169, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+  #liste_projets {
+    font-size: 13px; }
+
+  /* line 170, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+  .nom_projet {
+    font-size: 3rem; }
+
+  /* line 171, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_realisation.css.scss */
+  .navigation {
+    margin-top: 20px; } }
+/* line 1, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_studio.css.scss */
+body {
+  width: 100%;
+  height: 100%; }
+
+/* line 3, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_studio.css.scss */
+section {
+  background-color: #FBF3F4; }
+
+/* line 5, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_studio.css.scss */
+#container_titre {
+  width: 100%;
+  height: 400px;
+  font-family: brandon grotesque;
+  letter-spacing: 0px; }
+
+/* line 7, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_studio.css.scss */
+#nom_titre {
+  width: 800px;
+  height: 200px;
+  background-color: #FBF3F4;
+  font-size: 50px; }
+
+/* line 9, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_studio.css.scss */
+.studio-titre {
+  opacity: 0;
+  position: relative; }
+
+/* line 10, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_studio.css.scss */
+.say-titre {
+  position: relative;
+  opacity: 0;
+  margin-right: 0px; }
+
+/* line 11, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_studio.css.scss */
+.blur {
+  -webkit-filter: blur(3px);
+  filter: blur(3px); }
+
+/* line 12, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_studio.css.scss */
+#container_line {
+  height: 100px;
+  width: 100%; }
+
+/* line 13, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_studio.css.scss */
+.vertical_line {
+  height: 90px;
+  width: 1px;
+  background-color: #333333;
+  opacity: 0; }
+
+/* line 14, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_studio.css.scss */
+.say-gauche {
+  margin-left: 7px; }
+
+/* line 15, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_studio.css.scss */
+.ajust-droite {
+  margin-right: 3px; }
+
+/* line 16, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_studio.css.scss */
+.ajust-gauche {
+  margin-left: 10px; }
+
+/* line 17, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_studio.css.scss */
+.plus {
+  position: relative;
+  display: flex;
+  width: 600px; }
+
+/* line 19, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_studio.css.scss */
+#presentation_studio {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  opacity: 0; }
+
+/* line 20, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_studio.css.scss */
+.row_studio {
+  width: 1200px;
+  height: 300px;
+  font-size: 1.7rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  margin-top: 50px; }
+
+/* line 21, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_studio.css.scss */
+.row_studio p {
+  padding: 70px 10px 10px 20px;
+  margin: 0px;
+  letter-spacing: 0.08rem; }
+
+/* line 22, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_studio.css.scss */
+.title_presentation {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  font-size: 3rem; }
+
+/* line 23, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_studio.css.scss */
+.row_client {
+  width: 1200px;
+  height: 250px;
+  font-size: 1.7rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  margin-top: 50px; }
+
+/* line 24, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_studio.css.scss */
+.colonne {
+  padding: 70px 10px 10px 20px;
+  margin: 0px; }
+
+/* line 25, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_studio.css.scss */
+.colonne1 {
+  padding: 70px 20px 10px 20px;
+  margin: 0px;
+  display: flex;
+  justify-content: space-between;
+  line-height: 30px; }
+
+/* line 26, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_studio.css.scss */
+.col {
+  width: 600px;
+  position: relative; }
+
+@media only screen and (min-width: 1023px) and (max-width: 1279px) {
+  /* line 29, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_studio.css.scss */
+  html {
+    font-size: 9px; }
+
+  /* line 30, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_studio.css.scss */
+  .row_studio {
+    width: 1000px; }
+
+  /* line 31, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_studio.css.scss */
+  .row_client {
+    width: 1000px; }
+
+  /* line 32, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_studio.css.scss */
+  #presentation_studio p {
+    font-size: 1.4rem; }
+
+  /* line 33, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_studio.css.scss */
+  #presentation_studio li {
+    font-size: 1.4rem; }
+
+  /* line 34, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_studio.css.scss */
+  .plus {
+    position: relative;
+    display: flex;
+    width: 500px; } }
+@media only screen and (min-width: 765px) and (max-width: 1022px) {
+  /* line 39, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_studio.css.scss */
+  html {
+    font-size: 9px; }
+
+  /* line 40, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_studio.css.scss */
+  .row_studio {
+    width: 750px;
+    height: 400px; }
+
+  /* line 41, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_studio.css.scss */
+  .row_client {
+    width: 750px; }
+
+  /* line 42, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_studio.css.scss */
+  #presentation_studio p {
+    font-size: 1.4rem; }
+
+  /* line 43, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_studio.css.scss */
+  #presentation_studio li {
+    font-size: 1.4rem; }
+
+  /* line 44, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_studio.css.scss */
+  .plus {
+    position: relative;
+    display: flex;
+    width: 350px; } }
+@media only screen and (min-width: 300px) and (max-width: 764px) {
+  /* line 48, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_studio.css.scss */
+  html {
+    font-size: 8px; }
+
+  /* line 49, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_studio.css.scss */
+  .row_studio {
+    width: 350px;
+    height: 620px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+
+  /* line 50, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_studio.css.scss */
+  .row_client {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px; }
+
+  /* line 51, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_studio.css.scss */
+  #presentation_studio p {
+    font-size: 1.4rem; }
+
+  /* line 52, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_studio.css.scss */
+  #presentation_studio li {
+    font-size: 1.4rem; }
+
+  /* line 53, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_studio.css.scss */
+  .col {
+    width: 350px;
+    height: 300px; }
+
+  /* line 54, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_studio.css.scss */
+  .colonne1 {
+    justify-content: space-around;
+    line-height: 20px;
+    height: 200px; }
+
+  /* line 55, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_studio.css.scss */
+  .say-gauche {
+    margin-left: 2px; }
+
+  /* line 56, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_studio.css.scss */
+  .say-titre {
+    margin-right: -4px; }
+
+  /* line 57, /Users/Julie/Desktop/sayhype.deux/source/stylesheets/pages/_studio.css.scss */
+  .plus {
+    position: relative;
+    display: flex;
+    width: 350px; } }
